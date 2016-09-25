@@ -3,13 +3,13 @@ import org.hibernate.Session;
 
 import java.util.List;
 
-public class ArtistService {
+/**
+ * This class is a service with a CRUD-queries.
+ * session - is instance of current transaction.
+ * @see ArtistService#ArtistService(Session)
+ */
 
-    /**
-     * This class is a service with a CRUD-queries.
-     * session - is instance of current transaction.
-     * @see ArtistService#ArtistService(Session)
-     */
+public class ArtistService {
 
     private Session session;
 
