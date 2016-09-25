@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * This class is a service with a CRUD-queries.
- * session - is instance of current transaction.
+ * session - is an interface between a Java and Hibernate functionality.
  * @see ArtistService#ArtistService(Session)
  */
 
@@ -14,7 +14,7 @@ public class ArtistService {
     private Session session;
 
     /**
-     * Constructor for the service's instance. Had a current transaction as an argument.
+     * Constructor for the service's instance. Had a current session as an argument.
      * @param session - Session-typed. This param is the logical transaction.
      * @see ArtistService#createArtist(int, String, String)
      */
