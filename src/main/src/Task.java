@@ -5,7 +5,7 @@ import javax.persistence.metamodel.Type;
 import java.sql.Date;
 
 @Entity
-@Table(name = "task", schema = "public")
+@Table(name = "task", schema = "hibernate_basics_tutorial")
 public class Task {
 
     private Long taskId;
