@@ -2,7 +2,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "user", schema = "public")
+@Table(name = "user", schema = "hibernate_basics_tutorial")
 public class User {
 
     private Long userId;
