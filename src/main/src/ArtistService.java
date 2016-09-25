@@ -45,7 +45,7 @@ public class ArtistService {
         return (Artist) session.get(Artist.class, id);
     }
 
-    public List findAllArtists() {
+    public List<Artist> findAllArtists() {
         Query query = session.createQuery("SELECT a FROM Artist a");
         return query.list();
     }
