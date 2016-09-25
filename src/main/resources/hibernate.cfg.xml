@@ -10,5 +10,7 @@
         <property name="hibernate.connection.password">password</property>
         <property name="hibernate.connection.username">root</property>
         <mapping class="Artist"/>
+        <mapping class="User"/>
+        <mapping class="Task"/>
     </session-factory>
 </hibernate-configuration>
