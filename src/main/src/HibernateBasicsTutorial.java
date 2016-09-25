@@ -35,6 +35,22 @@ public class HibernateBasicsTutorial {
             System.out.println(String.format("Found: %s\n", currentArtist));
         }
 
+        System.out.println("--- Update artist ---");
+        transaction = session.beginTransaction();
+        artist = service.changeArtistGenre(1, "Indie Rock");
+        transaction.commit();
+        System.out.println(String.format("Updated: %s\n", artist));
+
+        System.out.println("--- Remove artist ---");
+        transaction = session.beginTransaction();
+        service.removeArtist(1);
+        transaction.commit();
+        artist= service.findArtist(1);
+        System.out.println(String.format("Found: %s\n", artist));
+
+        session.close();
+        sessionFactory.close();
+
     }
 
 }
